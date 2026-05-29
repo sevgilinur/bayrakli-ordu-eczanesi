@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bayraklı Ordu Eczanesi iletişim - Adres, telefon ve online iletişim formu ile bize ulaşın. İlaç danışmanlığı ve ürün bilgisi için bizimle iletişime geçin.">
+    <title>Ordu Eczanesi - İletişim</title>
+    <link rel="icon" href="foto/eczane-logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><picture><source srcset="foto/eczane-logo.webp" type="image/webp"><img src="foto/eczane-logo.jpg" alt="Logo" class="logo-img"></picture> BAYRAKLI ORDU ECZANESİ</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger" aria-label="Menüyü aç/kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="markalar.html">Markalar</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><button class="dark-toggle" onclick="toggleDark()" aria-label="Karanlık mod">🌙</button></li>
+                </ul>
+                <div class="nav-slider"></div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main class="page-container">
+        <h1>İletişim</h1>
+        <div class="iletisim-grid">
+            <div class="iletisim-form" id="danisma-form">
+                <h2>Danışma Formu</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="5296c95f-c440-4fd2-8196-bbab98356d0d">
+                    <input type="hidden" name="subject" value="Bayraklı Ordu Eczanesi - Danışma Formu">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <input type="text" name="name" placeholder="Adınız Soyadınız" required>
+                    <input type="tel" name="phone" placeholder="Telefon Numaranız" required inputmode="numeric" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    <input type="email" name="email" placeholder="E-posta Adresiniz">
+                    <textarea name="message" placeholder="Mesajınız..." rows="5"></textarea>
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
+            <div class="iletisim-info">
+                <section class="contact-info" style="margin:0;">
+                    <h2>📞 Bize Ulaşın</h2>
+                    <p><strong>📍 Adres:</strong> Osmangazi Mahallesi, 597 Sokak No:48/A Bayraklı / İzmir Osmangazi Sağlık Ocağı karşısı</p>
+                    <p><strong> Telefon:</strong> 0(232) 341 84 87</p>
+                    <p><strong> E-posta:</strong> bayraklıordueczanesi@gmail.com</p>
+                    <p><strong> Çalışma Saatleri:</strong> Hafta içi 09:00 - 19:00</p>
+                </section>
+                <section class="map" style="margin:2rem 0 0;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.018362649842!2d27.203890575727243!3d38.46413737181982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b9629920e5ec3b%3A0x46b503b7507706ce!2sBornova%20Ordu%20Eczane!5e0!3m2!1str!2str!4v1779709638561!5m2!1str!2str" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+            </div>
+        </div>
+        <aside>
+            <h2>Nöbet Takvimi</h2>
+            <div id="nobet-takvimi"></div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-section--brand">
+                <picture><source srcset="foto/eczane-logo.webp" type="image/webp"><img src="foto/eczane-logo.jpg" alt="Logo" class="footer-logo"></picture>
+                <div>
+                    <h3>BAYRAKLI ORDU ECZANESİ</h3>
+                    <p>Sağlığınız için yanınızdayız.</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="iletisim.html#nobet-takvimi">Nöbet Takvimi</a></li>
+                    <li><a href="iletisim.html#danisma-form">Danışma Formu</a></li>
+                    <li><a href="#" onclick="event.preventDefault();toggleMsg()">Bize Yazın</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <p>📍 Osmangazi Mahallesi, 597 Sokak No:48/A Bayraklı / İzmir Osmangazi Sağlık Ocağı karşısı</p>
+                <p> 0(232) 341 84 87</p>
+                <p>bayraklıordueczanesi@gmail.com</p>
+                <p> Hafta içi 09:00 - 19:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bayraklı Ordu Eczanesi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5X8YS2T7WT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5X8YS2T7WT');
+    </script>
+    <script src="script.js"></script>
+    <script src="components.js"></script>
+</body>
+</html>

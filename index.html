@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bayraklı Ordu Eczanesi - Sağlık ve güzellik ürünleri, reçete desteği ve uzman danışmanlık hizmeti. Ağız bakımı, cilt bakımı ve takviye edici gıdalar.">
+    <title>Ordu Eczanesi - Anasayfa</title>
+    <link rel="icon" href="foto/eczane-logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><picture><source srcset="foto/eczane-logo.webp" type="image/webp"><img src="foto/eczane-logo.jpg" alt="Logo" class="logo-img"></picture> BAYRAKLI ORDU ECZANESİ</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger" aria-label="Menüyü aç/kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="markalar.html">Markalar</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><button class="dark-toggle" onclick="toggleDark()" aria-label="Karanlık mod">🌙</button></li>
+                </ul>
+                <div class="nav-slider"></div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <h1 class="sr-only">Bayraklı Ordu Eczanesi</h1>
+
+    <section class="slider">
+        <div class="slider-track" id="sliderTrack">
+            <div class="slide">
+                <picture><source srcset="foto/disfircasi.webp" type="image/webp"><img fetchpriority="high" src="foto/disfircasi.jpg" alt="Oral-B"></picture>
+                <div class="slide-overlay">
+                    <h2>Oral-B</h2>
+                    <p>Ağız ve diş bakımında güvenilir marka</p>
+                    <a href="markalar.html#oralb" class="slide-btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+            <div class="slide">
+                <picture><source srcset="foto/slide2.webp" type="image/webp"><img src="foto/slide2.jpg" alt="Cosmed"></picture>
+                <div class="slide-overlay">
+                    <h2>Cosmed</h2>
+                    <p>Profesyonel cilt bakım ürünleri</p>
+                    <a href="markalar.html#cosmed" class="slide-btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+            <div class="slide">
+                <picture><source srcset="foto/slide3.webp" type="image/webp"><img src="foto/slide3.jpg" alt="Vichy"></picture>
+                <div class="slide-overlay">
+                    <h2>Vichy</h2>
+                    <p>Volkanik kaynak suyu ile zenginleştirilmiş bakım</p>
+                    <a href="markalar.html#vichy" class="slide-btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+            <div class="slide">
+                <picture><source srcset="foto/slide4.webp" type="image/webp"><img src="foto/slide4.jpg" alt="Bioxcin"></picture>
+                <div class="slide-overlay">
+                    <h2>Bioxcin</h2>
+                    <p>Saç dökülmesine karşı etkili çözüm</p>
+                    <a href="markalar.html#bioxcin" class="slide-btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+            <div class="slide">
+                <picture><source srcset="foto/slide5.webp" type="image/webp"><img src="foto/slide5.jpg" alt="Nutraxin"></picture>
+                <div class="slide-overlay">
+                    <h2>Nutraxin</h2>
+                    <p>Vitamin ve takviye edici gıdalar</p>
+                    <a href="markalar.html#nutraxin" class="slide-btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-arrow prev" onclick="prevSlide()">❮</button>
+        <button class="slider-arrow next" onclick="nextSlide()">❯</button>
+    </section>
+
+    <main>
+
+        <section class="brand-carousel">
+            <h2 class="section-title">Markalarımız</h2>
+            <div class="carousel-wrap">
+                <div class="carousel-track" id="brandTrack">
+                    <span>Acnecinamide</span><span>Alpecin</span><span>Aptamil</span><span>Argivit</span><span>Avene</span>
+                    <span>Babe</span><span>Bebelac</span><span>Bepanthol</span><span>Bioderma</span><span>BioNike</span>
+                    <span>Caudalie</span><span>CeraVe</span><span>Chicco</span><span>Corega</span><span>Ducray</span>
+                    <span>Embryolisse</span><span>Filorga</span><span>Foltene</span><span>Heliocare</span><span>Kerastase</span>
+                    <span>La Roche Posay</span><span>Lierac</span><span>Mustela</span><span>Neutrogena</span><span>Nuxe</span>
+                    <span>Orzax</span><span>Phyto</span><span>Sebamed</span><span>Sensodyne</span><span>SVR</span>
+                    <span>Vichy</span><span>Zade Vital</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <div class="card-icon">💊</div>
+                <h3>İlaç Takibi</h3>
+                <p>Reçeteli ve reçetesiz tüm ilaçlarınızı temin ederiz.</p>
+                <span class="card-tag">Reçete Desteği</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">🩺</div>
+                <h3>Danışmanlık</h3>
+                <p>Uzman ekibimizle ilaç danışmanlığı hizmeti.</p>
+                <span class="card-tag">Uzman Görüşü</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧴</div>
+                <h3>Cilt Analizi</h3>
+                <p>Uzman ekibimizle cilt tipinize uygun ürünleri keşfedin.</p>
+                <span class="card-tag">Kişisel Bakım</span>
+            </div>
+        </section>
+
+        <section class="brand-banners">
+            <h2 class="section-title">Öne Çıkan Ürünler</h2>
+            <div class="banner-grid">
+                <div class="banner-card">
+                    <picture><source srcset="foto/bioderma-sebium.webp" type="image/webp"><img loading="lazy" src="foto/bioderma-sebium.jpg" alt="Bioderma Sebium"></picture>
+                </div>
+                <div class="banner-card">
+                    <picture><source srcset="foto/parodontax.webp" type="image/webp"><img loading="lazy" src="foto/parodontax.jpg" alt="Parodontax"></picture>
+                </div>
+                <div class="banner-card">
+                    <picture><source srcset="foto/bioderma-sensibio.webp" type="image/webp"><img loading="lazy" src="foto/bioderma-sensibio.jpg" alt="Bioderma Sensibio"></picture>
+                </div>
+                <div class="banner-card">
+                    <img loading="lazy" src="https://www.darphin.com.tr/media/export/cms/dp_cleanser_2500x1100_v2.jpg" alt="Darphin">
+                </div>
+                <div class="banner-card">
+                    <picture><source srcset="foto/pharmaton.webp" type="image/webp"><img loading="lazy" src="foto/pharmaton.jpg" alt="Pharmaton"></picture>
+                </div>
+                <div class="banner-card">
+                    <picture><source srcset="foto/140638.webp" type="image/webp"><img loading="lazy" src="foto/140638.jpg" alt="CeraVe"></picture>
+                </div>
+                <div class="banner-card">
+                    <picture><source srcset="foto/avene.webp" type="image/webp"><img loading="lazy" src="foto/avene.jpg" alt="Avene"></picture>
+                </div>
+                <div class="banner-card">
+                    <picture><source srcset="foto/bepantol.webp" type="image/webp"><img loading="lazy" src="foto/bepantol.jpg" alt="Bepanthol"></picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-blog">
+            <h2 class="section-title">Blog</h2>
+            <p style="text-align:center; color:#64748b; margin-bottom:2rem;">Sağlık, bakım ve ürünler hakkında bilgilendirici yazılar</p>
+            <div class="home-blog-grid">
+                <article class="home-blog-card">
+                    <div class="home-blog-img">
+                        <picture><source srcset="foto/cocuk.webp" type="image/webp"><img loading="lazy" src="foto/cocuk.jpg" alt="Çocuklarda Bağışıklık"></picture>
+                    </div>
+                    <div class="home-blog-content">
+                        <h3>Çocuklarda Bağışıklık Sistemi</h3>
+                        <p>Çocuklarımızın büyüme ve gelişme dönemlerinde güçlü bir bağışıklık sistemine sahip olması, onların sadece mevsimsel hastalıklardan korunmasını sağlamaz.</p>
+                        <a href="blog.html#cocuk-bagisiklik" class="home-blog-btn">Devamını Oku →</a>
+                    </div>
+                </article>
+                <article class="home-blog-card">
+                    <div class="home-blog-img">
+                        <picture><source srcset="foto/trt.webp" type="image/webp"><img loading="lazy" src="foto/trt.jpg" alt="Güneşten Korunma"></picture>
+                    </div>
+                    <div class="home-blog-content">
+                        <h3>Güneşten Korunma Rehberi</h3>
+                        <p>Güneşin yaydığı ultraviyole (UV) ışınları; erken yaşlanma belirtilerine, kalıcı güneş lekelerine ve cilt kanseri riskine neden olur.</p>
+                        <a href="blog.html#gunes-korunma" class="home-blog-btn">Devamını Oku →</a>
+                    </div>
+                </article>
+                <article class="home-blog-card">
+                    <div class="home-blog-img">
+                        <picture><source srcset="foto/gazete.webp" type="image/webp"><img loading="lazy" src="foto/gazete.jpg" alt="Doğru İlaç Kullanımı"></picture>
+                    </div>
+                    <div class="home-blog-content">
+                        <h3>Doğru İlaç Kullanımı ve Saklama</h3>
+                        <p>İlaçların doğru zamanda, doğru dozda ve uygun koşullarda saklanması tedavinin başarısı için kritiktir.</p>
+                        <a href="blog.html#ilac-kullanimi" class="home-blog-btn">Devamını Oku →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-section--brand">
+                <picture><source srcset="foto/eczane-logo.webp" type="image/webp"><img src="foto/eczane-logo.jpg" alt="Logo" class="footer-logo"></picture>
+                <div>
+                    <h3>BAYRAKLI ORDU ECZANESİ</h3>
+                    <p>Sağlığınız için yanınızdayız.</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="iletisim.html#nobet-takvimi">Nöbet Takvimi</a></li>
+                    <li><a href="iletisim.html#danisma-form">Danışma Formu</a></li>
+                    <li><a href="#" onclick="event.preventDefault();toggleMsg()">Bize Yazın</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <p>📍 Osmangazi Mahallesi, 597 Sokak No:48/A Bayraklı / İzmir Osmangazi Sağlık Ocağı karşısı</p>
+                <p> 0(232) 341 84 87</p>
+                <p>bayraklıordueczanesi@gmail.com</p>
+                <p> Hafta içi 09:00 - 19:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bayraklı Ordu Eczanesi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5X8YS2T7WT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5X8YS2T7WT');
+    </script>
+    <script src="script.js"></script>
+    <script src="components.js"></script>
+</body>
+</html>
